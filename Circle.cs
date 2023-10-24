@@ -7,7 +7,7 @@
         {
             R = r;
         }
-        public bool isInside(Point point) => R <= Distance(point);
+        public bool isInside(Point point) => R >= Distance(point);
         public bool isBorder(Point point) => R == Distance(point);
     }
 }
