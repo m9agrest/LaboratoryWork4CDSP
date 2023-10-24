@@ -23,6 +23,9 @@ namespace LaboratoryWork4CDSP
         public MainWindow()
         {
             InitializeComponent();
+            Window w = new WindowCircle(new Circle(0,0,0));
+            
+            w.ShowDialog();
         }
     }
 }
