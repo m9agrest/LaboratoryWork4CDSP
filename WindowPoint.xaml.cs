@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,26 +14,24 @@ using System.Windows.Shapes;
 
 namespace LaboratoryWork4CDSP
 {
-    public partial class WindowCircle : Window
+    public partial class WindowPoint : Window
     {
-        Circle Circle;
-        public WindowCircle(Circle circle)
+        Point Point;
+        public WindowPoint(Point point)
         {
             InitializeComponent();
-            Circle = circle;
+            Point = point;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            double x, y, r;
-            if(
-                double.TryParse(X.Text, out x) && 
-                double.TryParse(Y.Text, out y) && 
-                double.TryParse(R.Text, out r))
+            double x, y;
+            if (
+                double.TryParse(X.Text, out x) &&
+                double.TryParse(Y.Text, out y))
             {
-                Circle.X = x;
-                Circle.Y = y;
-                Circle.R = r;
+                Point.X = x;
+                Point.Y = y;
                 Close();
             }
             else
