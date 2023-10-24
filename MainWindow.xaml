@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Height="25" Margin="10,10,0,0" Content="Точка" HorizontalAlignment="Left" Width="60" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Width="60" Margin="80,10,0,0" Height="25" Content="Круг 1" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Width="60" Margin="150,10,0,0" Height="25" Content="Круг 2" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Label Height="25" Margin="0,0,0,45" VerticalAlignment="Bottom" x:Name="Info1"/>
+        <Label Height="25" Margin="0,0,0,10" VerticalAlignment="Bottom" x:Name="Info2"/>
+        <Canvas x:Name="canvas"></Canvas>
     </Grid>
 </Window>

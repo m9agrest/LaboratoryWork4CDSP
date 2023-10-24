@@ -21,8 +21,10 @@ namespace LaboratoryWork4CDSP
             if(
                 double.TryParse(X.Text, out x) && 
                 double.TryParse(Y.Text, out y) && 
-                double.TryParse(R.Text, out r))
+                double.TryParse(R.Text, out r) && 
+                r > 0)
             {
+
                 Circle.X = x;
                 Circle.Y = y;
                 Circle.R = r;
