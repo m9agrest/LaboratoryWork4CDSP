@@ -22,6 +22,9 @@ namespace LaboratoryWork4CDSP
         {
             InitializeComponent();
             Circle = circle;
+            X.Text = Circle.X.ToString();
+            Y.Text = Circle.Y.ToString();
+            R.Text = Circle.R.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

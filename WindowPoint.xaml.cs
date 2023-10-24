@@ -21,6 +21,8 @@ namespace LaboratoryWork4CDSP
         {
             InitializeComponent();
             Point = point;
+            X.Text = Point.X.ToString();
+            Y.Text = Point.Y.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
